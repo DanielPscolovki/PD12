@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Užduotys</title>
+</head>
+<body>
+    <h1>JavaScript Užduotys</h1>
+
+    <script>
+        // 1. Paskaitų skaičiavimas
+        function skaiciuotiPaskaitas() {
+            const paskaitos = {
+                pirmadienis: 5,
+                antradienis: 6,
+                treciadienis: 4,
+                ketvirtadienis: 5,
+                penktadienis: 4
+            };
+
+            let paskaituSkaicius = 0;
+            for (let diena in paskaitos) {
+                paskaituSkaicius += paskaitos[diena];
+            }
+
+            const paskaituLaikasMinutemis = paskaituSkaicius * 45;
+            console.log(`Paskaitų skaičius per savaitę - ${paskaituSkaicius}. Tai sudaro ${paskaituLaikasMinutemis} minučių.`);
+        }
+
+        // 2. Puodelių supakavimas
+        function supakuotiPuodelius(n) {
+            const pilnosDezes = Math.floor(n / 3);
+            const likusiosPuodeliai = n % 3;
+            console.log(`Pilnų dėžučių skaičius: ${pilnosDezes}. Nesupakuotų puodelių skaičius: ${likusiosPuodeliai}.`);
+        }
+
+        // Ir t.t., įrašykite čia likusias funkcijas
+
+        // Šis kodas kviečia funkcijas, kad jos būtų vykdomos
+        skaiciuotiPaskaitas();
+        supakuotiPuodelius(7);
+        // Įrašykite kitas funkcijas čia ir jas iškvieskite
+    </script>
+</body>
+</html>
